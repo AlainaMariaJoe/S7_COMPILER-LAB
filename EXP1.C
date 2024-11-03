@@ -55,4 +55,18 @@ int main() {
 
     fclose(fp);
     return 0;
-}
+} 
+
+// Input
+/* inp.txt
+x= b+c
+*/
+
+// Output
+/*
+= is an operator
++ is an operator
+x is an identifier
+b is an identifier
+c is an identifier
+*/
