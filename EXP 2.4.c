@@ -27,3 +27,20 @@ int main() {
     printf("Number of consonants are: %d\n", c);
     return 0;
 }
+
+
+/*
+lex EXP 2.4.l
+gcc lex.yy.c
+./a.out
+*/
+
+
+/*
+Enter the string of vowels and consonants:
+Alaina
+
+Number of vowels are: 4
+Number of consonants are: 2
+
+*/
