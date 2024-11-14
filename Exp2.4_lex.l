@@ -30,7 +30,7 @@ int main() {
 
 
 /*
-lex EXP 2.4.l
+lex Exp2.4_lex.l
 gcc lex.yy.c
 ./a.out
 */
