@@ -35,7 +35,7 @@ int yywrap() {}
 
 
 /*
-lex EXP02_1.l
+lex Exp2.1_lex.l
 gcc lex.yy.c
 ./a.out 
 Enter the input text: x=y+z
