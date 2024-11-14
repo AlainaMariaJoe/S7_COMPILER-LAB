@@ -25,3 +25,13 @@ int main() {
 		printf("It is a identifier!\n");
 	}
 }
+
+/*
+lex Exp3.2_lex.l
+yacc -d Exp3.2_yacc.y
+gcc lex.yy.c y.tab.c -lfl
+
+./a.out
+Enter the expression : alaina
+It is an identifier!
+*/
