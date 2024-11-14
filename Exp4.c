@@ -52,8 +52,19 @@ int main() {
     return 0;
 }
 
+
 /*
-gcc EXP 4.c 
+input.dat
+
+q0 0 q0
+q0 1 q1
+q0 e q1
+q1 e q2
+*/
+
+
+/*
+gcc Exp4.c 
 ./a.out
 
 Enter the no of states: 3
