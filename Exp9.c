@@ -2,14 +2,13 @@
 #include <string.h>
 
 char op[2], arg1[5], arg2[5], result[5];
-
 void main() {
     FILE *fp1, *fp2;
     char f[100];
     
     printf("Enter input file name: ");
     scanf("%[^\n]s", f);
-    getchar();  // Consume newline character left by scanf
+    getchar();  
 
     fp1 = fopen(f, "r");
     fp2 = fopen("output.txt", "w");
@@ -21,11 +20,10 @@ void main() {
 
     if (fp2 == NULL) {
         printf("Error opening output file\n");
-        fclose(fp1);  // Ensure input file is closed on error
+        fclose(fp1);  
         return;
     }
 
-    // Process each line
     while (fscanf(fp1, "%s %s %s %s", op, arg1, arg2, result) == 4) {
         if (strcmp(op, "+") == 0) {
             fprintf(fp2, "\nMOV R0,%s", arg1);
@@ -58,8 +56,6 @@ void main() {
 
     fclose(fp1);
     fclose(fp2);
-
-    printf("Assembly code has been written to output.txt\n");
 }
 
 
@@ -70,7 +66,7 @@ input.txt
 - t1 t2 t
 = t ? x
 
-gcc EXP 9.c
+gcc Exp9.c
 ./a.out
 Enter input file name: input.txt
 
